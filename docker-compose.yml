@@ -1,0 +1,9 @@
+version: '2'
+services:
+  db:
+    build: ./db/
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password
+      MYSQL_DATABASE: your_schema    
+    ports:
+      - "3306:3306"

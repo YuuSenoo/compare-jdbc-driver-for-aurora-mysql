@@ -1,0 +1,22 @@
+
+logging:
+  level:
+    root: INFO
+    MySQL: trace
+    org:
+      hibernate:
+        SQL: trace
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
+          EnumType: trace
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/your_schema?logger=com.mysql.cj.log.Slf4JLogger&profileSQL=true&traceProtocol=true&serverTimezone=JST
+    username: root
+    password: your_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
