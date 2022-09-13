@@ -1,12 +1,10 @@
 package com.senoo.mysqljdbcdriversample;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.ZonedDateTime;
 
 @Entity
 @Data
@@ -19,20 +17,6 @@ public class Students {
     private Long id;
 
     @Column(nullable = false)
-    private int grade;
-
-    @Column(nullable = false)
-    private String className;
-
-    @Column(nullable = false)
     private String name;
-
-    @JsonIgnore
-    @Column(nullable = false, updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-    private ZonedDateTime created;
-
-    @JsonIgnore
-    @Column(nullable = false, updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
-    private ZonedDateTime updated;
 
 }
