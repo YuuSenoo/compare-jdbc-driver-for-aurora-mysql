@@ -1,4 +1,4 @@
-package com.senoo.mysqljdbcdriversample;
+package com.senoo.mariadbjdbcdriversample;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

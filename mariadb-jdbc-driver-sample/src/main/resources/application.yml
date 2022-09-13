@@ -1,8 +1,9 @@
 logging:
   level:
     root: INFO
-    MySQL: trace
     org:
+      mariadb:
+        jdbc: trace
       hibernate:
         SQL: trace
         type:
@@ -12,10 +13,10 @@ logging:
           EnumType: trace
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/your_schema?logger=com.mysql.cj.log.Slf4JLogger&profileSQL=true&traceProtocol=true&serverTimezone=JST
+    url: jdbc:mariadb:aurora//127.0.0.1:3306/your_schema?log=true&profileSQL=true&traceProtocol=true
     username: root
     password: your_password
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create-drop

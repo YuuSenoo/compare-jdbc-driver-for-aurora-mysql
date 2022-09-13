@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.senoo</groupId>
-	<artifactId>mysql-jdbc-driver-sample</artifactId>
+	<artifactId>mariadb-jdbc-driver-sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mysql-jdbc-driver-sample</name>
-	<description>mysql jdbc driver sample project</description>
+	<name>mariadb-jdbc-driver-sample</name>
+	<description>mariadb jdbc driver sample project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -26,9 +26,9 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.7.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>

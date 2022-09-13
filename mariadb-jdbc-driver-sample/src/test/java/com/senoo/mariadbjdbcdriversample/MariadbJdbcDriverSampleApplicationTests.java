@@ -1,10 +1,10 @@
-package com.senoo.mysqljdbcdriversample;
+package com.senoo.mariadbjdbcdriversample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MysqlJdbcDriverSampleApplicationTests {
+class MariadbJdbcDriverSampleApplicationTests {
 
 	@Test
 	void contextLoads() {
